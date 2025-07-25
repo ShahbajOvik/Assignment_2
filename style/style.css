@@ -34,6 +34,35 @@ nav {
 .nav-links {
   display: inline;
 }
+
+.hero {
+  max-width: 1140px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+}
+
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.image-section {
+  order: 2;
+}
+
+.text-section {
+  order: 1;
+}
+
+
+
+/* Design for mobile */
+
 @media (max-width: 768px) {
   nav .nav-links {
     display: none;
@@ -45,6 +74,25 @@ nav {
 
   header img {
     height: auto;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .image-section {
+    order: 1;
+  }
+
+  .text-section {
+    order: 2;
+    text-align: left;
+    padding: 24px 24px;
   }
 }
     
