@@ -60,6 +60,42 @@ nav {
 }
 
 
+.products {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+}
+
+.product-card {
+  background: #f9fafb;
+
+}
+
+.product-card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.add-btn {
+  background: #f97316;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
 
 /* Design for mobile */
 
@@ -93,6 +129,15 @@ nav {
     order: 2;
     text-align: left;
     padding: 24px 24px;
+  }
+
+  .products {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
     
