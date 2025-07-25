@@ -240,6 +240,79 @@ nav {
   background-color: rgb(233, 89, 12);
 }
 
+.footer-container {
+  max-width: 1140px;
+  margin: 70px auto;
+  background-color: #f9fafb;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-logo-section {
+  width: 360px;
+}
+
+.footer-logo {
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f97316;
+  margin-bottom: 12px;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 24px;
+}
+
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(137, 135, 135);
+}
+
+.footer-column ul li a:hover {
+  color: rgb(249, 115, 22);
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #444;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-column {
+  width: 216px;
+  height: 36px;
+  display: flex;
+  gap: 20px;
+}
 
 
 
@@ -323,7 +396,23 @@ nav {
   }
 
   .hero2 h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .footer-container {
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0px;
+    margin-bottom: 100px;
+  }
+
+  .footer-column {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-top: 0;
   }
 
 
