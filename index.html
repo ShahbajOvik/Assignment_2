@@ -4,134 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flower Shop</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: sans-serif;
-      background-color: #f9fafb;
-      color: #333;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    .nav-links {
-      display: none;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .hero img {
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .products {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-
-    .product-card {
-      background: white;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .product-card img {
-      width: 100%;
-      margin-bottom: 0.5rem;
-    }
-
-    .add-btn {
-      background: #f97316;
-      color: white;
-      border: none;
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      font-weight: 600;
-      cursor: pointer;
-      border-radius: 0.25rem;
-    }
-
-    @media(min-width: 768px) {
-      .nav-links {
-        display: inline;
-      }
-
-      .hero {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 4rem;
-      }
-
-      .grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-      }
-    }
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="flex items-center space-x-2">
-      <img src="assets/logo.png" alt="Logo">
-    </div>
-    <nav>
-      <a href="#" class="nav-links text-sm font-semibold hover:text-orange-500">Home</a>
-      <a href="#" class="nav-links text-sm hover:text-orange-500">Shop</a>
-      <a href="#" class="nav-links text-sm hover:text-orange-500">About us</a>
-      <a class="text-sm font-semibold" href="#"> <i class="fa-solid fa-cart-arrow-down"></i> Cart ($56)</a>
-    </nav>
-  </header>
+    <header>
+      <div>
+        <img src="assets/logo.png" alt="Logo" style="height: 55px;">
+      </div>
+      <nav>
+        <a href="#" class="nav-links text-sm font-semibold hover:text-orange-500">Home</a>
+        <a href="#" class="nav-links text-sm hover:text-orange-500">Shop</a>
+        <a href="#" class="nav-links text-sm hover:text-orange-500">About us</a>
+        <a href="#" class="text-sm font-semibold"><i class="fa-solid fa-cart-arrow-down"></i> Cart ($56)</a>
+      </nav>
+    </header>
+<!-- header Section End -->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="text-section space-y-4">
-      <h1 class="text-4xl font-bold"><span class="text-black">ALWAYS</span> <span class="text-orange-500">FRESH FLOWERS</span></h1>
-      <p class="text-gray-600">
-        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
-      </p>
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/400x300?text=Flowers" alt="Flowers">
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Image on right (desktop), top (mobile) -->
+  <div class="image-section">
+    <img src="assets/hero-flower.png" alt="Flowers">
+  </div>
+
+  <!-- Text on left -->
+  <div class="text-section space-y-4 md:text-left noto-serif">
+    <h1 class="text-4xl md:text-5xl font-bold font-serif leading-tight">
+      <span class="text-black">ALWAYS</span><br>
+      <span class="text-orange-500">FRESH FLOWERS</span>
+    </h1>
+    <p class="text-gray-600 text-base md:text-lg">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms,
+      we offer a wide variety of fresh flowers that are perfect for any occasion.
+    </p>
+  </div>
+</section>
 
   <!-- Products Section -->
   <section class="products">

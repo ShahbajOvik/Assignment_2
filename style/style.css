@@ -1,14 +1,50 @@
 
-.noto-serif{
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Serif';
+  background-color: #f9fafb;
+  color: #333;
+}
+
+header {
+  max-width: 1140px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links {
+  display: inline;
+}
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none;
   }
-  @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    }
+
+  header {
+    padding: 1rem;
+  }
+
+  header img {
+    height: auto;
+  }
+}
     
