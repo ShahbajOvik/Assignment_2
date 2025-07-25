@@ -15,7 +15,7 @@
 
 body {
   font-family: 'Noto Serif';
-  background-color: #f9fafb;
+  background-color: #FFFFFF;
   color: #333;
 }
 
@@ -75,7 +75,7 @@ nav {
 }
 
 .product-card {
-  background: #f9fafb;
+  background: #FFFFFF;
 
 }
 
@@ -123,7 +123,7 @@ nav {
 }
 
 .plant-text-section {
-  background-color: #f9fafb;
+  background-color: #FFFFFF;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
